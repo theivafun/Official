@@ -3,30 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My Awesome Books</title>
+  <title>Professional Book Showcase</title>
+  <!-- Google Fonts for a professional look -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Link to External CSS -->
   <link rel="stylesheet" href="styles.css">
   <style>
-    /* Inline styles can be used for quick adjustments, but it's best to use external files for maintainability */
+    /* Fallback styles for critical layout if external CSS fails */
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #f3f7fa, #e2ebf2);
+      margin: 0;
+      color: #333;
+    }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Welcome to My Book Showcase</h1>
+  <!-- Header with a hero section -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Discover Your Next Great Read</h1>
+      <p>Explore professionally crafted stories and timeless adventures</p>
+      <a href="#book" class="cta">Explore My Book</a>
+    </div>
   </header>
 
-  <div class="container">
-    <section class="book">
-      <h2>Your Book Title Here</h2>
-      <p>Enter a brief description of your book. Share what makes it special and why readers should dive into your story. Make it engaging and inviting!</p>
-      <a href="https://www.amazon.com" class="cta" target="_blank" rel="noopener">Buy on Amazon</a>
+  <!-- Main Content -->
+  <main>
+    <section id="book" class="book-section">
+      <div class="container">
+        <h2>Your Book Title Here</h2>
+        <p>Immerse yourself in a journey of inspiration and excellence. This book offers an insightful exploration of themes that resonate with today’s discerning readers. Every page is crafted with precision to evoke emotion, thought, and trust.</p>
+        <a href="https://www.amazon.com" class="cta" target="_blank" rel="noopener">Buy on Amazon</a>
+      </div>
     </section>
-    <!-- Add more sections for additional books if needed -->
-  </div>
+  </main>
 
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Your Name. All rights reserved.</p>
+    <div class="container">
+      <p>&copy; 2025 Your Name. All rights reserved.</p>
+      <p>Connect with me: 
+        <a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a> | 
+        <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+      </p>
+    </div>
   </footer>
 
+  <!-- External JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>
