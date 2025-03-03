@@ -3,49 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Professional Book Showcase</title>
+  <title>Vibrant Book Showcase</title>
   <!-- Google Fonts for a professional look -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <!-- Link to External CSS -->
   <link rel="stylesheet" href="styles.css">
   <style>
-
+    /* Fallback styles if external CSS fails */
     body {
       font-family: 'Roboto', sans-serif;
-      background: linear-gradient(135deg, #f3f7fa, #e2ebf2);
+      background: #fafafa;
       margin: 0;
       color: #333;
     }
   </style>
 </head>
 <body>
-  <!-- Header with a hero section -->
-  <header class="hero">
+  <!-- Hero Section with Background Image -->
+  <header class="hero" style="background: url('https://via.placeholder.com/1500x600?text=Hero+Image') no-repeat center center/cover; padding: 100px 20px; color: #fff; text-align: center;">
     <div class="hero-content">
-      <h1>Discover Your Next Great Read</h1>
-      <p>Explore professionally crafted stories and timeless adventures</p>
-      <a href="#book" class="cta">Explore My Book</a>
+      <h1 style="font-size: 3rem; margin-bottom: 20px;">Discover Your Next Great Read</h1>
+      <p style="font-size: 1.25rem; margin-bottom: 30px;">Explore professionally crafted stories and timeless adventures</p>
+      <a href="#book" class="cta" style="background: #ff6f61; color: #fff; padding: 15px 30px; text-decoration: none; font-size: 1.1rem; border-radius: 5px;">Explore My Book</a>
     </div>
   </header>
 
   <!-- Main Content -->
   <main>
-    <section id="book" class="book-section">
-      <div class="container">
-        <h2>Your Book Title Here</h2>
-        <p>Immerse yourself in a journey of inspiration and excellence. This book offers an insightful exploration of themes that resonate with today’s discerning readers. Every page is crafted with precision to evoke emotion, thought, and trust.</p>
-        <a href="https://www.amazon.com" class="cta" target="_blank" rel="noopener">Buy on Amazon</a>
+    <!-- Book Section with Image and Description -->
+    <section id="book" class="book-section" style="padding: 60px 20px; background: linear-gradient(135deg, #f6d365, #fda085);">
+      <div class="container" style="max-width: 900px; margin: 0 auto; background: #fff; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); overflow: hidden;">
+        <!-- Book Image -->
+        <div style="text-align: center;">
+          <img src="https://via.placeholder.com/600x400?text=Book+Cover" alt="Book Cover" style="width: 100%; max-width: 600px; display: block; margin: 0 auto;">
+        </div>
+        <!-- Book Description -->
+        <div style="padding: 30px;">
+          <h2 style="color: #ff6f61; margin-bottom: 15px;">Your Book Title Here</h2>
+          <p style="font-size: 1.1rem; line-height: 1.6; margin-bottom: 20px;">
+            Immerse yourself in a journey of inspiration and excellence. This book offers an insightful exploration of themes that resonate with today’s discerning readers. Every page is crafted with precision to evoke emotion, thought, and trust.
+          </p>
+          <a href="https://www.amazon.com" class="cta" target="_blank" rel="noopener" style="background: #007BFF; color: #fff; padding: 12px 25px; text-decoration: none; border-radius: 5px;">Buy on Amazon</a>
+        </div>
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Your Name. All rights reserved.</p>
-      <p>Connect with me: 
-        <a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a> | 
-        <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+  <!-- Footer with Social Links -->
+  <footer style="background: #333; color: #fff; padding: 40px 20px; text-align: center;">
+    <div class="container" style="max-width: 900px; margin: 0 auto;">
+      <p style="margin-bottom: 10px;">&copy; 2025 Your Name. All rights reserved.</p>
+      <p>
+        Connect with me: 
+        <a href="https://twitter.com" target="_blank" rel="noopener" style="color: #ff6f61; text-decoration: none; margin: 0 10px;">Twitter</a> | 
+        <a href="https://linkedin.com" target="_blank" rel="noopener" style="color: #ff6f61; text-decoration: none; margin: 0 10px;">LinkedIn</a>
       </p>
     </div>
   </footer>
